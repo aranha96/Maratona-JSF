@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:body>
+   <p:importEnum type="br.com.maratonajsf.model.enums.Turno" var="Turno" allSuffix="ALL_ENUM_VALUES" />
+   <f:view>
+      <h:outputLabel value="Hello Jaime"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.nome}"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota1 eq estudanteRegistrarBean.estudante.nota2 and estudanteRegistrarBean.estudante.nome.equals('Jaime')}"/><br/>
+      <h:outputText value="Comparacao"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota1 le estudanteRegistrarBean.estudante.nota2}"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota1 eq 0 ? 'ZERO' : 'NAO ZERO'}"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota1 = 20}"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota3}"/><br/>
+      <h:outputText value="ENUM"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.turno}"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.estudante.turno eq Turno.MATUTINO}"/><br/>
+   </f:view>
+</h:body>
+</html>
