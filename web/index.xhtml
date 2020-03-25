@@ -20,6 +20,35 @@
       <h:outputText value="ENUM"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.turno}"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.turno eq Turno.MATUTINO}"/><br/>
+      <h:outputText value="ARRAY"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.nomesArray[0]}"/>
+      <h:outputLabel value="#{estudanteRegistrarBean.nomesArray[1]}"/>
+      <h:outputLabel value="#{estudanteRegistrarBean.nomesArray[2]}"/><br/>
+      <ui:repeat value="#{estudanteRegistrarBean.nomesArray}" var="nome">
+         <h:outputLabel value="#{nome}"/><br/>
+      </ui:repeat>
+      <h:outputText value="LISTA"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.nomesLista.get(0)} #{estudanteRegistrarBean.nomesLista.get(1)}"/><br/>
+      <ui:repeat value="#{estudanteRegistrarBean.nomesLista}" var="nome">
+         <h:outputLabel value="#{nome}"/><br/>
+      </ui:repeat>
+      <h:outputText value="SET"/><br/>
+      <ui:repeat value="#{estudanteRegistrarBean.nomesSet}" var="nome">
+         <h:outputLabel value="#{nome}"/><br/>
+      </ui:repeat>
+      <h:outputText value="MAP"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.nomesMap.get('Filosofia')}"/><br/>
+      <h:outputLabel value="#{estudanteRegistrarBean.nomesMap}"/><br/>
+      <ui:repeat value="#{estudanteRegistrarBean.nomesMap}" var="entry">
+         <h:outputLabel value="#{entry}"/><br/>
+      </ui:repeat>
+      #{estudanteRegistrarBean.executar()}
+      #{estudanteRegistrarBean.executar(estudanteRegistrarBean.estudante.nome)}
+      #{estudanteRegistrarBean.executarRetorno('JSF')}<br/>
+      <h:form>
+         <h:commandButton value="Ir para proxima Pagina"
+                          action="#{estudanteRegistrarBean.irParaIndex2()}"/>
+      </h:form>
    </f:view>
 </h:body>
 </html>
