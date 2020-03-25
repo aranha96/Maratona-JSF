@@ -6,49 +6,97 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
+<h:head>
+
+</h:head>
 <h:body>
    <p:importEnum type="br.com.maratonajsf.model.enums.Turno" var="Turno" allSuffix="ALL_ENUM_VALUES" />
    <f:view>
       <h:outputLabel value="Hello Jaime"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.nome}"/><br/>
+      <h:outputText value="---Comparacao---"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota1 eq estudanteRegistrarBean.estudante.nota2 and estudanteRegistrarBean.estudante.nome.equals('Jaime')}"/><br/>
-      <h:outputText value="Comparacao"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota1 le estudanteRegistrarBean.estudante.nota2}"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota1 eq 0 ? 'ZERO' : 'NAO ZERO'}"/><br/>
-      <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota1 = 20}"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.nota3}"/><br/>
-      <h:outputText value="ENUM"/><br/>
+      <h:outputText value="---ENUM---"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.turno}"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.estudante.turno eq Turno.MATUTINO}"/><br/>
-      <h:outputText value="ARRAY"/><br/>
+      <h:outputText value="---ARRAY---"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.nomesArray[0]}"/>
       <h:outputLabel value="#{estudanteRegistrarBean.nomesArray[1]}"/>
       <h:outputLabel value="#{estudanteRegistrarBean.nomesArray[2]}"/><br/>
       <ui:repeat value="#{estudanteRegistrarBean.nomesArray}" var="nome">
          <h:outputLabel value="#{nome}"/><br/>
       </ui:repeat>
-      <h:outputText value="LISTA"/><br/>
+      <h:outputText value="---LISTA---"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.nomesLista.get(0)} #{estudanteRegistrarBean.nomesLista.get(1)}"/><br/>
       <ui:repeat value="#{estudanteRegistrarBean.nomesLista}" var="nome">
          <h:outputLabel value="#{nome}"/><br/>
       </ui:repeat>
-      <h:outputText value="SET"/><br/>
+      <h:outputText value="---SET---"/><br/>
       <ui:repeat value="#{estudanteRegistrarBean.nomesSet}" var="nome">
          <h:outputLabel value="#{nome}"/><br/>
       </ui:repeat>
-      <h:outputText value="MAP"/><br/>
+      <h:outputText value="---MAP---"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.nomesMap.get('Filosofia')}"/><br/>
       <h:outputLabel value="#{estudanteRegistrarBean.nomesMap}"/><br/>
       <ui:repeat value="#{estudanteRegistrarBean.nomesMap}" var="entry">
          <h:outputLabel value="#{entry}"/><br/>
       </ui:repeat>
+      <h:outputText value="---METODOS---"/><br/>
       #{estudanteRegistrarBean.executar()}
       #{estudanteRegistrarBean.executar(estudanteRegistrarBean.estudante.nome)}
       #{estudanteRegistrarBean.executarRetorno('JSF')}<br/>
       <h:form>
          <h:commandButton value="Ir para proxima Pagina"
-                          action="#{estudanteRegistrarBean.irParaIndex2()}"/>
+                          action="#{estudanteRegistrarBean.irParaIndex2()}"/><br/>
+         <h:outputText value="---JS com EL---"/><br/>
+         <h:commandButton value="Soltar Magia" onclick="fazMagica('Magica Liberada')"/><br/>
+         <h:commandButton value="Alert Nome" onclick="alertNome('#{estudanteRegistrarBean.estudante.nome}')"/>
+      </h:form>
+      <h:outputText value="---Imprimindo CSS com EL---"/><br/>
+      <ui:repeat value="#{estudanteRegistrarBean.nomesLista}" var="nome" varStatus="status">
+         #{status.index}
+         <h:outputLabel value="#{nome}" style="color: #{status.index mod 2 == 0 ? 'red' : 'green'}"/><br/>
+      </ui:repeat>
+      <br/>
+      <h:form id="form">
+         <h:commandButton value="Exibir Notas">
+            <f:ajax render="notasGrid" listener="#{estudanteRegistrarBean.exibirNotas()}"/><br/>
+         </h:commandButton>
+         <h:commandButton value="Esconder Notas">
+            <f:ajax render="notasGrid" listener="#{estudanteRegistrarBean.esconderNotas()}"/><br/>
+         </h:commandButton>
+         <h:panelGrid id="notasGrid">
+            <h:outputText value="#{estudanteRegistrarBean.estudante.nome}"/>
+            <h:outputText value="#{estudanteRegistrarBean.estudante.sobrenome}"/>
+            <h:outputText value="#{estudanteRegistrarBean.estudante.turno}"/>
+            <h:outputText value="#{estudanteRegistrarBean.estudante.nota1}" rendered="#{estudanteRegistrarBean.mostrarNotas}"/>
+            <h:outputText value="#{estudanteRegistrarBean.estudante.nota2}" rendered="#{estudanteRegistrarBean.mostrarNotas}"/>
+            <h:outputText value="#{estudanteRegistrarBean.estudante.nota3}" rendered="#{estudanteRegistrarBean.mostrarNotas}"/>
+         </h:panelGrid><br/>
+         <h:commandButton value="Exibir Link">
+            <f:ajax render="pgLink" listener="#{estudanteRegistrarBean.exibirLink()}"/><br/>
+         </h:commandButton>
+         <h:commandButton value="Esconder Link">
+            <f:ajax render="pgLink" listener="#{estudanteRegistrarBean.esconderLink()}"/><br/>
+         </h:commandButton>
+         <h:panelGroup id="pgLink">
+            <ui:fragment id="fragmentLink" rendered="#{estudanteRegistrarBean.mostrarLink}">
+               <a href="http://www.google.com.br" target="_blank">www.google.com.br</a>
+            </ui:fragment>
+         </h:panelGroup>
       </h:form>
    </f:view>
 </h:body>
+<script type="text/javascript">
+   function fazMagica(magica){
+      alert(magica);
+   }
+
+   function alertNome(nome){
+      alert(nome);
+   }
+</script>
 </html>
