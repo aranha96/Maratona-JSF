@@ -5,11 +5,13 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
       xmlns:p="http://primefaces.org/ui">
 <h:head>
 
 </h:head>
 <h:body>
+   <c:set value="#{[1,2,3,4,5,6,7,8,9]}" var="valuesList"/>
    <p:importEnum type="br.com.maratonajsf.model.enums.Turno" var="Turno" allSuffix="ALL_ENUM_VALUES" />
    <f:view>
       <h:outputLabel value="Hello Jaime"/><br/>
@@ -88,6 +90,40 @@
             </ui:fragment>
          </h:panelGroup>
       </h:form>
+      <h:outputText value="---Lambda---"/><br/>
+      #{(soma -> soma + num) (10)}<br/>
+      #{((v1,v2,v3) -> v1*v2*v3) (1,5,10)}<br/>
+      #{(x -> x*x*x) (2)}<br/>
+      #{cubo=(x -> x*x*x); cubo(10)}
+      <h:form>
+         <h:commandButton value="Calcular Cubo" actionListener="#{estudanteRegistrarBean.calcularCubo((x->x*x*x),10)}"/>
+      </h:form>
+      <h:outputText value="---Listas---"/><br/>
+      <ui:repeat value="#{['Lista', 'de', 'teste']}" var="listaTeste">
+         #{listaTeste}
+      </ui:repeat>
+      <br/>
+      <h:outputText value="---Set---"/><br/>
+      <ui:repeat value="#{{'Lista', 'de', 'teste', 'teste'}}" var="setTeste">
+         #{setTeste}
+      </ui:repeat>
+      <br/>
+      <h:outputText value="---Map---"/><br/>
+      <ui:repeat value="#{{'Curso' : 'JSF', 'Aula' : 'Decima Primeira'}}" var="mapTeste">
+         #{mapTeste}
+      </ui:repeat>
+      <br/>
+      <ui:repeat value="#{[1,2,3,4,5,6,7,8,9,10,11,12].stream().filter(v-> v>5).toList()}" var="resultado">
+         #{resultado}
+      </ui:repeat>
+      <br/>
+      <ui:repeat value="#{valuesList.stream().filter(v-> v>5).toList()}" var="resultado">
+         #{resultado}
+      </ui:repeat>
+      <br/>
+      #{valuesList.stream().average().get()}<br/>
+      #{valuesList.stream().sum()}<br/>
+      #{valuesList.stream().filter(v-> v>5).sum()}<br/>
    </f:view>
 </h:body>
 <script type="text/javascript">
