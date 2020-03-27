@@ -1,7 +1,8 @@
-package br.com.maratonajsf.bean.request;
+package br.com.maratonajsf.bean.view;
 
 import javax.annotation.PostConstruct;
-import javax.enterprise.context.RequestScoped;
+import javax.faces.context.FacesContext;
+import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,15 +12,15 @@ import java.util.concurrent.ThreadLocalRandom;
 import static java.util.Arrays.asList;
 
 @Named
-@RequestScoped
-public class TesteRequestBean implements Serializable {
+@ViewScoped
+public class TesteViewBean implements Serializable {
     private List<String> personagens;
     private List<String> personagemSelecionado = new ArrayList<>();
 
     @PostConstruct
     public void init(){
-        System.out.println("Entrou no PostConstruct do Request");
-        personagens = asList("Bruce Wayne","Peter Parker","Diana Prince");
+        System.out.println("Entrou no PostConstruct do View");
+        personagens = asList("Tony Stark","Barry Allen","Hal Jordan");
     }
 
     public void selecionarPersonagem(){

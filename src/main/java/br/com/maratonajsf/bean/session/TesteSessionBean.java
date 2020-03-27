@@ -1,7 +1,8 @@
-package br.com.maratonajsf.bean.request;
+package br.com.maratonajsf.bean.session;
 
 import javax.annotation.PostConstruct;
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,15 +12,20 @@ import java.util.concurrent.ThreadLocalRandom;
 import static java.util.Arrays.asList;
 
 @Named
-@RequestScoped
-public class TesteRequestBean implements Serializable {
+@SessionScoped
+public class TesteSessionBean implements Serializable {
     private List<String> personagens;
     private List<String> personagemSelecionado = new ArrayList<>();
 
     @PostConstruct
     public void init(){
-        System.out.println("Entrou no PostConstruct do Request");
-        personagens = asList("Bruce Wayne","Peter Parker","Diana Prince");
+        System.out.println("Entrou no PostConstruct do Session");
+        personagens = asList("Clark Kent","Scott Summers","Bruce Banner");
+    }
+
+    public String logout(){
+        FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+        return "session?faces-redirect=true";
     }
 
     public void selecionarPersonagem(){
@@ -44,3 +50,4 @@ public class TesteRequestBean implements Serializable {
         this.personagemSelecionado = personagemSelecionado;
     }
 }
+

@@ -8,15 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="59e3d43b-3d1d-47ea-adbf-3d208486bde7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/classes/br/com/maratonajsf/bean/estudante/EstudanteRegistrarBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/classes/br/com/maratonajsf/bean/estudante/EstudanteRegistrarBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/index2.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/index2.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/maratonajsf/bean/estudante/EstudanteRegistrarBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maratonajsf/bean/estudante/EstudanteRegistrarBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/maratonajsf/bean/estudante/EstudanteRegistrarBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/maratonajsf/bean/estudante/EstudanteRegistrarBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/maratonajsf/bean/request/TesteRequestBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maratonajsf/bean/request/TesteRequestBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index2.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index2.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +178,7 @@
       <workItem from="1585238531087" duration="2991000" />
       <workItem from="1585241865676" duration="24000" />
       <workItem from="1585244101203" duration="113000" />
+      <workItem from="1585311521972" duration="4798000" />
     </task>
     <servers />
   </component>
@@ -223,25 +218,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584646075519" />
-    <state width="905" height="152" key="GridCell.Tab.0.bottom" timestamp="1585244215045">
+    <state width="905" height="99" key="GridCell.Tab.0.bottom" timestamp="1585317876853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="152" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585244215045" />
-    <state width="905" height="152" key="GridCell.Tab.0.center" timestamp="1585244215045">
+    <state width="905" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585317876853" />
+    <state width="905" height="99" key="GridCell.Tab.0.center" timestamp="1585317876852">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="152" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585244215045" />
-    <state width="905" height="152" key="GridCell.Tab.0.left" timestamp="1585244215045">
+    <state width="905" height="99" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585317876852" />
+    <state width="905" height="99" key="GridCell.Tab.0.left" timestamp="1585317876852">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="152" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585244215045" />
-    <state width="905" height="152" key="GridCell.Tab.0.right" timestamp="1585244215045">
+    <state width="905" height="99" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585317876852" />
+    <state width="905" height="99" key="GridCell.Tab.0.right" timestamp="1585317876852">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="152" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585244215045" />
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585244102850">
+    <state width="905" height="99" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585317876852" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585311548159">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585244102850" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585311548159" />
   </component>
 </project>
