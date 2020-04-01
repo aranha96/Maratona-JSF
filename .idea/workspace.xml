@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="59e3d43b-3d1d-47ea-adbf-3d208486bde7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/inicioflow.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/inicioflow.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/registration/registration-flow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/registration/registration-flow.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/registration/registration2.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/registration/registration2.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="jsf" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -187,6 +186,7 @@
       <workItem from="1585571606979" duration="773000" />
       <workItem from="1585572488363" duration="6401000" />
       <workItem from="1585654437257" duration="6256000" />
+      <workItem from="1585739807805" duration="11832000" />
     </task>
     <servers />
   </component>
@@ -214,10 +214,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585157342911" />
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585655613735">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585740786466">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585655613735" />
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585740786466" />
     <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1584645349867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -226,29 +226,33 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584646075519" />
-    <state width="905" height="109" key="GridCell.Tab.0.bottom" timestamp="1585661045942">
+    <state width="905" height="253" key="GridCell.Tab.0.bottom" timestamp="1585751850258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="109" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585661045942" />
-    <state width="905" height="109" key="GridCell.Tab.0.center" timestamp="1585661045942">
+    <state width="905" height="253" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585751850258" />
+    <state width="905" height="253" key="GridCell.Tab.0.center" timestamp="1585751850258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="109" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585661045942" />
-    <state width="905" height="109" key="GridCell.Tab.0.left" timestamp="1585661045942">
+    <state width="905" height="253" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585751850258" />
+    <state width="905" height="253" key="GridCell.Tab.0.left" timestamp="1585751850258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="109" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585661045942" />
-    <state width="905" height="109" key="GridCell.Tab.0.right" timestamp="1585661045942">
+    <state width="905" height="253" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585751850258" />
+    <state width="905" height="253" key="GridCell.Tab.0.right" timestamp="1585751850258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="109" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585661045942" />
+    <state width="905" height="253" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585751850258" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1585574530201">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585574530201" />
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585654519322">
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585739950241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585654519322" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585739950241" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585740550025">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585740550025" />
   </component>
 </project>
