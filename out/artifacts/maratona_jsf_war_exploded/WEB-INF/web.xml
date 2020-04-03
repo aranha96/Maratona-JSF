@@ -9,7 +9,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <welcome-file-list>
-        <welcome-file>inicioflow.xhtml</welcome-file>
+        <welcome-file>comunicacao.xhtml</welcome-file>
     </welcome-file-list>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
@@ -18,7 +18,19 @@
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
-    <error-page>
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>br.com.maratonajsf.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/restricted/*</url-pattern>
+    </filter-mapping>
+    <context-param>
+        <param-name>images.location</param-name>
+        <param-value>C:\var</param-value>
+    </context-param>
+    <!--<error-page>
         <location>/error.xhtml</location>
-    </error-page>
+    </error-page>-->
 </web-app>
