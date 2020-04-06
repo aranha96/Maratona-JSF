@@ -8,11 +8,16 @@
 <h:head>
 
 </h:head>
+<f:metadata>
+    <f:viewParam name="nome" value="#{comunicacaoTeste3Bean.nome}"/>
+    <f:viewParam name="sobrenome" value="#{comunicacaoTeste3Bean.sobrenome}"/>
+    <f:event listener="#{comunicacaoTeste3Bean.init()}" type="preRenderView"></f:event>
+</f:metadata>
 <h:body>
     <h:form>
         <h:panelGrid columns="1">
-            <h:inputText value="#{comunicacaoTeste2Bean.nome}"/>
-            <h:inputText value="#{comunicacaoTeste2Bean.sobrenome}"/>
+            <h:outputLabel value="#{comunicacaoTeste3Bean.nome}"/>
+            <h:outputLabel value="#{comunicacaoTeste3Bean.sobrenome}"/>
         </h:panelGrid>
     </h:form>
 </h:body>

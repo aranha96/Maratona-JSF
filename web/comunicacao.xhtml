@@ -6,28 +6,33 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
-    <h:body>
-        <h:form>
-            <h:panelGrid columns="1">
-                <h:outputText value="#{facesContext.externalContext.getInitParameter('images.location')}"/>
-                <h:commandButton value="Imprimir" actionListener="#{comunicacaoTeste1Bean.imprimirAtributos()}"/>
-            </h:panelGrid>
-        </h:form>
-        <h:form>
-            <h:panelGrid columns="1">
-                <h:inputText value="#{comunicacaoTeste1Bean.nome}"/>
-                <h:inputText value="#{comunicacaoTeste1Bean.sobrenome}"/>
-                <h:commandButton value="Save" action="#{comunicacaoTeste1Bean.save()}"/>
-                <h:button value="Save 2" outcome="comunicacao2?faces-redirect=true">
-                    <f:param name="nome" value="Padilla"/>
-                    <f:param name="sobrenome" value="Aranha"/>
-                </h:button>
-                <h:link value="Vai Para Comunicacao 2" outcome="comunicacao2">
-                    <f:param name="nome" value="Eduardo"/>
-                    <f:param name="sobrenome" value="Padilla"/>
-                </h:link>
-            </h:panelGrid>
-        </h:form>
-    </h:body>
+
 </h:head>
+<h:body>
+    <h:form>
+        <h:panelGrid columns="1">
+            <h:outputText value="#{facesContext.externalContext.getInitParameter('images.location')}"/>
+            <h:commandButton value="Imprimir" actionListener="#{comunicacaoTeste1Bean.imprimirAtributos()}"/>
+        </h:panelGrid>
+    </h:form>
+    <h:form>
+        <h:panelGrid columns="1">
+            <h:inputText value="#{comunicacaoTeste1Bean.nome}"/>
+            <h:inputText value="#{comunicacaoTeste1Bean.sobrenome}"/>
+            <h:commandButton value="Save" action="#{comunicacaoTeste1Bean.save()}"/>
+            <h:button value="Save 2" outcome="comunicacao2?faces-redirect=true">
+                <f:param name="nome" value="Padilla"/>
+                <f:param name="sobrenome" value="Aranha"/>
+            </h:button>
+            <h:link value="Vai Para Comunicacao 2" outcome="comunicacao2">
+                <f:param name="nome" value="Eduardo"/>
+                <f:param name="sobrenome" value="Padilla"/>
+            </h:link>
+            <h:link value="Vai Para Comunicacao 3" outcome="comunicacao3">
+                <f:param name="nome" value="Comunicacao"/>
+                <f:param name="sobrenome" value="3"/>
+            </h:link>
+        </h:panelGrid>
+    </h:form>
+</h:body>
 </html>
