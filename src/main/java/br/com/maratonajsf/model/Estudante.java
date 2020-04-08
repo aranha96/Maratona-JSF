@@ -2,15 +2,30 @@ package br.com.maratonajsf.model;
 
 import br.com.maratonajsf.model.enums.Turno;
 
+import java.util.List;
+import static java.util.Arrays.asList;
+
 public class Estudante {
     private String nome = "Jaime";
     private String sobrenome = "Eduardo";
-    private double nota1;
+    private double nota1 = 10;
     private double nota2;
     private double nota3 = 10;
     private Turno turno = Turno.MATUTINO;
 
     public Estudante() {
+    }
+
+    public Estudante(String nome, String sobrenome, double nota1) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.nota1 = nota1;
+    }
+
+    public static List<Estudante> estudanteList() {
+        return asList(new Estudante("Jaime", "Eduardo",9),
+                new Estudante("Miguel", "Xavier",7),
+                new Estudante("Diego", "Alexandre",8));
     }
 
     public String getNome() {
