@@ -2,17 +2,22 @@ package br.com.maratonajsf.model;
 
 import br.com.maratonajsf.model.enums.Turno;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
 import static java.util.Arrays.asList;
 
-public class Estudante {
+public class Estudante implements Serializable {
+    private Integer id;
     private String nome = "Jaime";
     private String sobrenome = "Eduardo";
     private double nota1 = 10;
     private double nota2;
     private double nota3 = 10;
     private Turno turno = Turno.MATUTINO;
+    private String email;
 
     public Estudante() {
     }
@@ -23,10 +28,17 @@ public class Estudante {
         this.nota1 = nota1;
     }
 
+    public Estudante(Integer id, String nome, String sobrenome, double nota1) {
+        this.id = id;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.nota1 = nota1;
+    }
+
     public static List<Estudante> estudanteList() {
-        return new ArrayList<>(asList(new Estudante("Jaime", "Eduardo",9),
-                new Estudante("Miguel", "Xavier",7),
-                new Estudante("Diego", "Alexandre",8)));
+        return new ArrayList<>(asList(new Estudante(1,"Jaime", "Eduardo",9),
+                new Estudante(2, "Miguel", "Xavier",7),
+                new Estudante(3, "Diego", "Alexandre",8)));
     }
 
     public String getNome() {
@@ -75,5 +87,34 @@ public class Estudante {
 
     public void setTurno(Turno turno) {
         this.turno = turno;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Estudante estudante = (Estudante) o;
+        return Objects.equals(id, estudante.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
