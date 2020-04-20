@@ -9,7 +9,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <welcome-file-list>
-        <welcome-file>datatable.xhtml</welcome-file>
+        <welcome-file>ajax.xhtml</welcome-file>
     </welcome-file-list>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
@@ -29,6 +29,10 @@
     <context-param>
         <param-name>images.location</param-name>
         <param-value>C:\var</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.SEPARATOR_CHAR</param-name>
+        <param-value>-</param-value>
     </context-param>
     <!--<error-page>
         <location>/error.xhtml</location>
