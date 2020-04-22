@@ -1,20 +1,48 @@
 package br.com.maratonajsf.bean.ajax;
 
+import javax.faces.event.AjaxBehaviorEvent;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+import static java.util.Arrays.asList;
 
 @Named
 @ViewScoped
 public class AjaxTesteBean implements Serializable {
     private String nome;
     private String sobrenome;
+    private Map<String, List<String>> animePersonagensMap;
+    private List<String> personagens;
+    private String animeSelecionado;
+    private String personagemSelecionado;
+    {
+        animePersonagensMap = new TreeMap<>();
+        animePersonagensMap.put("Hellsing", asList("Alucard", "Seras", "Alexander"));
+        animePersonagensMap.put("Attack on Titan", asList("Eren", "Mikasa", "Armin"));
+        animePersonagensMap.put("Berserk", asList("Guts", "Casca", "Griffith"));
+    }
 
-    public void toUpperCase(){
+    public void oneSelectAnime(){
+        if(animeSelecionado == null){
+            personagens = null;
+            return;
+        }
+        personagens = animePersonagensMap.get(animeSelecionado);
+    }
+
+    public void toUpperCase(AjaxBehaviorEvent event){
         this.nome = this.nome.toUpperCase();
         this.sobrenome = this.sobrenome.toUpperCase();
         System.out.println(nome);
         System.out.println(sobrenome);
+    }
+
+    public void toUpperCaseNome(){
+        this.nome = this.nome.toUpperCase();
     }
 
     public String getNome() {
@@ -31,5 +59,37 @@ public class AjaxTesteBean implements Serializable {
 
     public void setSobrenome(String sobrenome) {
         this.sobrenome = sobrenome;
+    }
+
+    public Map<String, List<String>> getAnimePersonagensMap() {
+        return animePersonagensMap;
+    }
+
+    public void setAnimePersonagensMap(Map<String, List<String>> animePersonagensMap) {
+        this.animePersonagensMap = animePersonagensMap;
+    }
+
+    public List<String> getPersonagens() {
+        return personagens;
+    }
+
+    public void setPersonagens(List<String> personagens) {
+        this.personagens = personagens;
+    }
+
+    public String getAnimeSelecionado() {
+        return animeSelecionado;
+    }
+
+    public void setAnimeSelecionado(String animeSelecionado) {
+        this.animeSelecionado = animeSelecionado;
+    }
+
+    public String getPersonagemSelecionado() {
+        return personagemSelecionado;
+    }
+
+    public void setPersonagemSelecionado(String personagemSelecionado) {
+        this.personagemSelecionado = personagemSelecionado;
     }
 }
