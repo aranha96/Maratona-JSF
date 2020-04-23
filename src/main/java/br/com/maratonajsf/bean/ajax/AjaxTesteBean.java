@@ -1,5 +1,6 @@
 package br.com.maratonajsf.bean.ajax;
 
+import javax.faces.context.FacesContext;
 import javax.faces.event.AjaxBehaviorEvent;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
@@ -15,11 +16,14 @@ import static java.util.Arrays.asList;
 public class AjaxTesteBean implements Serializable {
     private String nome;
     private String sobrenome;
+    private String email;
     private Map<String, List<String>> animePersonagensMap;
     private List<String> personagens;
     private String animeSelecionado;
     private String personagemSelecionado;
-    {
+
+    public void init(){
+        System.out.println("entrou");
         animePersonagensMap = new TreeMap<>();
         animePersonagensMap.put("Hellsing", asList("Alucard", "Seras", "Alexander"));
         animePersonagensMap.put("Attack on Titan", asList("Eren", "Mikasa", "Armin"));
@@ -91,5 +95,13 @@ public class AjaxTesteBean implements Serializable {
 
     public void setPersonagemSelecionado(String personagemSelecionado) {
         this.personagemSelecionado = personagemSelecionado;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
