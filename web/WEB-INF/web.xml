@@ -9,7 +9,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <welcome-file-list>
-        <welcome-file>html5.xhtml</welcome-file>
+        <welcome-file>beanvalidation.xhtml</welcome-file>
     </welcome-file-list>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
@@ -33,6 +33,10 @@
     <context-param>
         <param-name>javax.faces.SEPARATOR_CHAR</param-name>
         <param-value>-</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</param-name>
+        <param-value>true</param-value>
     </context-param>
     <!--<error-page>
         <location>/error.xhtml</location>

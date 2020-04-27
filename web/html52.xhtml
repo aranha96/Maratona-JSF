@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:JSF="http://xmlns.jcp.org/jsf"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head JSF:id="head"></head>
+<body JSF:id="body">
+<form JSF:id="form">
+    <p:messages autoUpdate="true" id="messages"/>
+    Email: <input JSF:id="email" type="email" required="required"
+                  JSF:value="#{html5TesteBean.email}"
+                  JSF:validator="#{validators.validateDuplicatedEmail}"/>
+    <br/>
+    URL: <input JSF:id="url" type="url" required="required"
+                  JSF:value="#{html5TesteBean.url}"/>
+    <br/>
+    Numero: <input JSF:id="number" type="number" required="required"
+                JSF:value="#{html5TesteBean.numero}"/>
+    <br/>
+    <button JSF:actionListener="#{html5TesteBean.salvar}">
+        Salvar
+    </button>
+</form>
+</body>
+</html>
