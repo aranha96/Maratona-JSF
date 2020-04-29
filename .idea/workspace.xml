@@ -8,10 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="59e3d43b-3d1d-47ea-adbf-3d208486bde7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/classes/br/com/maratonajsf/bean/html5/Html5TesteBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/classes/br/com/maratonajsf/bean/html5/Html5TesteBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/classes/br/com/maratonajsf/validators/Validators.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/classes/br/com/maratonajsf/validators/Validators.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/maratonajsf/bean/html5/Html5TesteBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maratonajsf/bean/html5/Html5TesteBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/maratonajsf/bean/html5/Html5TesteBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/maratonajsf/bean/html5/Html5TesteBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/maratonajsf/validators/Validators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maratonajsf/validators/Validators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/maratonajsf/validators/Validators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/maratonajsf/validators/Validators.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,14 @@
       <recent name="C:\Users\jaime\IdeaProjects\maratona-jsf\web" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JBoss Server.Wildfly 19.0.0.Final">
+    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Teste" />
+      <module name="maratona-jsf" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Wildfly 19.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 19.0.0.Final" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -133,6 +140,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Teste" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -143,6 +155,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -206,6 +223,9 @@
       <workItem from="1587745911977" duration="2937000" />
       <workItem from="1588005848866" duration="6768000" />
       <workItem from="1588015240392" duration="168000" />
+      <workItem from="1588023235881" duration="20000" />
+      <workItem from="1588091130516" duration="5011000" />
+      <workItem from="1588177916110" duration="5151000" />
     </task>
     <servers />
   </component>
@@ -233,10 +253,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585157342911" />
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1588013456557">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1588091678476">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1588013456557" />
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1588091678476" />
     <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1584645349867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -253,30 +273,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584646075519" />
-    <state width="905" height="136" key="GridCell.Tab.0.bottom" timestamp="1588014295525">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1588183737863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="136" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588014295525" />
-    <state width="905" height="136" key="GridCell.Tab.0.center" timestamp="1588014295525">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588183737863" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1588183737863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="136" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588014295525" />
-    <state width="905" height="136" key="GridCell.Tab.0.left" timestamp="1588014295524">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588183737863" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1588183737863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="136" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588014295524" />
-    <state width="905" height="136" key="GridCell.Tab.0.right" timestamp="1588014295525">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588183737863" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1588183737863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="136" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588014295525" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588183737863" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1585574530201">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585574530201" />
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588015405290">
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588178082995">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588015405290" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588178082995" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585740550025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
