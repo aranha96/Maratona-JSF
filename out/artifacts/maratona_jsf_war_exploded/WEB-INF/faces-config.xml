@@ -9,5 +9,6 @@
             <base-name>messages</base-name>
             <var>m</var>
         </resource-bundle>
+        <resource-handler>org.omnifaces.resourcehandler.UnmappedResourceHandler</resource-handler>
     </application>
 </faces-config>

@@ -9,11 +9,12 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <welcome-file-list>
-        <welcome-file>ajax3.xhtml</welcome-file>
+        <welcome-file>viewexpired.xhtml</welcome-file>
     </welcome-file-list>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
+        <url-pattern>/javax.faces.resource/*</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
@@ -42,6 +43,14 @@
         <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
         <param-value>server</param-value>
     </context-param>
+    <context-param>
+        <param-name>com.sun.faces.enableRestoreView11Compatibility</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <error-page>
+        <exception-type>javax.faces.application.ViewExpiredException</exception-type>
+        <location>/expirederror.xhtml</location>
+    </error-page>
     <!--<context-param>
         <param-name>com.sun.faces.numberOfLogicalViews</param-name>
         <param-value>2</param-value>
