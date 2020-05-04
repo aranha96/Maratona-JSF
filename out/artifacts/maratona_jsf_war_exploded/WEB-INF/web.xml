@@ -9,7 +9,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <welcome-file-list>
-        <welcome-file>viewexpired.xhtml</welcome-file>
+        <welcome-file>taglibfunction.xhtml</welcome-file>
     </welcome-file-list>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
@@ -46,6 +46,10 @@
     <context-param>
         <param-name>com.sun.faces.enableRestoreView11Compatibility</param-name>
         <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.FACELETS_LIBRARIES</param-name>
+        <param-value>/WEB-INF/devdojo-components.taglib.xml;/WEB-INF/devdojo-functions.taglib.xml</param-value>
     </context-param>
     <error-page>
         <exception-type>javax.faces.application.ViewExpiredException</exception-type>
