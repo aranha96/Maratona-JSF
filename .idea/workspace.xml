@@ -7,14 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e3d43b-3d1d-47ea-adbf-3d208486bde7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/maratona_jsf_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/maratona_jsf_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-jsf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-jsf.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/datatable.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maratona_jsf_war_exploded/datatable.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/datatable.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/datatable.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +21,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="jsf" />
         <option value="Class" />
+        <option value="jsf" />
       </list>
     </option>
   </component>
@@ -62,12 +57,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jaime\IdeaProjects\maratona-jsf\web\resources\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jaime\IdeaProjects\maratona-jsf\web\WEB-INF\template" />
       <recent name="C:\Users\jaime\IdeaProjects\maratona-jsf\web\resources\default" />
       <recent name="C:\Users\jaime\IdeaProjects\maratona-jsf\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jaime\IdeaProjects\maratona-jsf\web\resources\images" />
     </key>
   </component>
   <component name="RunManager" selected="JBoss Server.Wildfly 19.0.0.Final">
@@ -238,6 +234,7 @@
       <workItem from="1588177916110" duration="5151000" />
       <workItem from="1588264266284" duration="10669000" />
       <workItem from="1588610402732" duration="7523000" />
+      <workItem from="1588698173032" duration="2430000" />
     </task>
     <servers />
   </component>
@@ -285,30 +282,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584646075519" />
-    <state width="905" height="241" key="GridCell.Tab.0.bottom" timestamp="1588619128772">
+    <state width="905" height="159" key="GridCell.Tab.0.bottom" timestamp="1588700615845">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="241" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588619128772" />
-    <state width="905" height="241" key="GridCell.Tab.0.center" timestamp="1588619128772">
+    <state width="905" height="159" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588700615845" />
+    <state width="905" height="159" key="GridCell.Tab.0.center" timestamp="1588700615845">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="241" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588619128772" />
-    <state width="905" height="241" key="GridCell.Tab.0.left" timestamp="1588619128772">
+    <state width="905" height="159" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588700615845" />
+    <state width="905" height="159" key="GridCell.Tab.0.left" timestamp="1588700615845">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="241" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588619128772" />
-    <state width="905" height="241" key="GridCell.Tab.0.right" timestamp="1588619128772">
+    <state width="905" height="159" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588700615845" />
+    <state width="905" height="159" key="GridCell.Tab.0.right" timestamp="1588700615845">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="241" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588619128772" />
+    <state width="905" height="159" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588700615845" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1585574530201">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585574530201" />
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588610472346">
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588698217397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588610472346" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588698217397" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588612913391">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
